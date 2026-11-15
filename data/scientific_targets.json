@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Jezero",
+    "lat": 18.38,
+    "lon": 77.58,
+    "reason": "Ancient lake and river delta; sediment layers record past water."
+  },
+  {
+    "name": "Gale",
+    "lat": -4.49,
+    "lon": 137.42,
+    "reason": "Layered mountain records changing environments over time."
+  },
+  {
+    "name": "Eberswalde",
+    "lat": -23.9,
+    "lon": 326.74,
+    "reason": "Preserved river delta, a record of sediment transport."
+  },
+  {
+    "name": "Holden",
+    "lat": -26.4,
+    "lon": 325.16,
+    "reason": "Flood deposits and alluvial fans reveal water activity."
+  },
+  {
+    "name": "Mawrth Vallis",
+    "lat": 23.99,
+    "lon": 341.04,
+    "reason": "Clay-rich layers record water-rock interactions."
+  }
+]

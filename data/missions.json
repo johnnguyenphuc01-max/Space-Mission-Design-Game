@@ -1,0 +1,75 @@
+{
+  "launchers": [
+    {
+      "name": "Aster 1",
+      "cost": 30,
+      "capacity": 800,
+      "c3": 9,
+      "description": "Fictional light Mars injector; payload capacity is at the stated C3, not LEO."
+    },
+    {
+      "name": "Aster 2",
+      "cost": 50,
+      "capacity": 1400,
+      "c3": 16,
+      "description": "Fictional medium Mars injector. Higher departure energy and payload."
+    },
+    {
+      "name": "Aster Heavy",
+      "cost": 85,
+      "capacity": 2200,
+      "c3": 25,
+      "description": "Fictional heavy injector; expensive performance reserve."
+    }
+  ],
+  "transfers": [
+    {
+      "name": "Hohmann window",
+      "days": 259,
+      "c3": 8.7,
+      "vinf": 2.65,
+      "correction": 80,
+      "description": "Near circular, coplanar minimum-energy reference. Launch at a suitable planetary alignment."
+    },
+    {
+      "name": "Fast opportunity",
+      "days": 210,
+      "c3": 15,
+      "vinf": 3.4,
+      "correction": 140,
+      "description": "Illustrative faster transfer: more departure energy and harder Mars capture."
+    },
+    {
+      "name": "Off-window attempt",
+      "days": 300,
+      "c3": 23,
+      "vinf": 4.2,
+      "correction": 280,
+      "description": "Illustrative poor alignment: expensive departure and arrival; no ephemeris optimization."
+    }
+  ],
+  "orbits": [
+    {
+      "name": "Low mapping",
+      "peri": 300,
+      "apo": 300,
+      "description": "Sharp images but narrow swath. Higher capture delta-v."
+    },
+    {
+      "name": "Regional mapper",
+      "peri": 600,
+      "apo": 600,
+      "description": "Wider swath and longer period; lower surface resolution."
+    },
+    {
+      "name": "Elliptical survey",
+      "peri": 400,
+      "apo": 8000,
+      "description": "Images at periapsis; long period reduces imaging opportunities."
+    }
+  ],
+  "budget": 260,
+  "lifetime_hours": 24,
+  "minimum_coverage": 80,
+  "return_fraction": 0.8
+}

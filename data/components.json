@@ -1,0 +1,278 @@
+{
+  "solar": [
+    {
+      "id": "solar_0",
+      "name": "Compact wings",
+      "mass": 30,
+      "cost": 8,
+      "power": 0,
+      "description": "Light and cheap; limited electricity at Mars.",
+      "watts": 520,
+      "span": 1.5
+    },
+    {
+      "id": "solar_1",
+      "name": "Mapper wings",
+      "mass": 65,
+      "cost": 18,
+      "power": 0,
+      "description": "Balanced arrays. Output falls with distance squared.",
+      "watts": 1250,
+      "span": 2.5
+    },
+    {
+      "id": "solar_2",
+      "name": "Deep-space wings",
+      "mass": 110,
+      "cost": 30,
+      "power": 0,
+      "description": "More electricity, more launch mass and cost.",
+      "watts": 2200,
+      "span": 3.3
+    }
+  ],
+  "battery": [
+    {
+      "id": "battery_0",
+      "name": "Reserve 300",
+      "mass": 12,
+      "cost": 4,
+      "power": 0,
+      "description": "Small eclipse reserve; avoid running camera and radio together.",
+      "wh": 300
+    },
+    {
+      "id": "battery_1",
+      "name": "Reserve 800",
+      "mass": 30,
+      "cost": 9,
+      "power": 0,
+      "description": "Stores daytime energy for eclipse operations.",
+      "wh": 800
+    },
+    {
+      "id": "battery_2",
+      "name": "Reserve 1600",
+      "mass": 60,
+      "cost": 17,
+      "power": 0,
+      "description": "Longer operations in shadow, with a mass penalty.",
+      "wh": 1600
+    }
+  ],
+  "camera": [
+    {
+      "id": "camera_0",
+      "name": "Survey imager",
+      "mass": 20,
+      "cost": 8,
+      "power": 45,
+      "description": "Wide coverage, modest data. 12 m/pixel at 400 km.",
+      "gsd": 12,
+      "data": 180,
+      "exposure": 8
+    },
+    {
+      "id": "camera_1",
+      "name": "Mapping imager",
+      "mass": 45,
+      "cost": 20,
+      "power": 110,
+      "description": "Sharper images need more power and storage.",
+      "gsd": 5,
+      "data": 420,
+      "exposure": 10
+    },
+    {
+      "id": "camera_2",
+      "name": "Precision imager",
+      "mass": 85,
+      "cost": 38,
+      "power": 240,
+      "description": "Very sharp but data-heavy; needs accurate pointing.",
+      "gsd": 1,
+      "data": 1400,
+      "exposure": 16
+    }
+  ],
+  "comms": [
+    {
+      "id": "comms_0",
+      "name": "Low-gain link",
+      "mass": 8,
+      "cost": 4,
+      "power": 25,
+      "description": "Very slow downlink can strand valuable images onboard.",
+      "mbps": 0.018,
+      "dish": 0.55
+    },
+    {
+      "id": "comms_1",
+      "name": "Mapper dish",
+      "mass": 22,
+      "cost": 12,
+      "power": 70,
+      "description": "Directional antenna with useful data return.",
+      "mbps": 3,
+      "dish": 1
+    },
+    {
+      "id": "comms_2",
+      "name": "High-gain dish",
+      "mass": 40,
+      "cost": 25,
+      "power": 120,
+      "description": "Fast downlink, but higher power draw and cost.",
+      "mbps": 8,
+      "dish": 1.5
+    }
+  ],
+  "computer": [
+    {
+      "id": "computer_0",
+      "name": "Compact avionics",
+      "mass": 8,
+      "cost": 5,
+      "power": 22,
+      "description": "Limited storage and slower image processing.",
+      "storage": 900,
+      "processing": 0.8
+    },
+    {
+      "id": "computer_1",
+      "name": "Science avionics",
+      "mass": 15,
+      "cost": 12,
+      "power": 35,
+      "description": "Balanced storage and processing speed.",
+      "storage": 4200,
+      "processing": 1
+    },
+    {
+      "id": "computer_2",
+      "name": "Data workstation",
+      "mass": 30,
+      "cost": 22,
+      "power": 65,
+      "description": "Holds many large images; uses extra power.",
+      "storage": 12000,
+      "processing": 1.3
+    }
+  ],
+  "propulsion": [
+    {
+      "id": "propulsion_0",
+      "name": "Monopropellant",
+      "mass": 25,
+      "cost": 8,
+      "power": 0,
+      "description": "Simple thruster; low specific impulse uses more fuel.",
+      "isp": 220
+    },
+    {
+      "id": "propulsion_1",
+      "name": "Bipropellant",
+      "mass": 40,
+      "cost": 18,
+      "power": 0,
+      "description": "Higher specific impulse improves manoeuvre efficiency.",
+      "isp": 325
+    },
+    {
+      "id": "propulsion_2",
+      "name": "Efficient bipropellant",
+      "mass": 55,
+      "cost": 30,
+      "power": 0,
+      "description": "Efficient chemical engine with higher dry mass and cost.",
+      "isp": 350
+    }
+  ],
+  "fuel": [
+    {
+      "id": "fuel_0",
+      "name": "Lean tank",
+      "mass": 12,
+      "cost": 5,
+      "power": 0,
+      "description": "Only 120 kg propellant: capture may be impossible.",
+      "fuel": 120
+    },
+    {
+      "id": "fuel_1",
+      "name": "Transfer tank",
+      "mass": 22,
+      "cost": 10,
+      "power": 0,
+      "description": "450 kg propellant for capture and corrections.",
+      "fuel": 450
+    },
+    {
+      "id": "fuel_2",
+      "name": "Extended tank",
+      "mass": 35,
+      "cost": 17,
+      "power": 0,
+      "description": "650 kg propellant adds capability and launch mass.",
+      "fuel": 650
+    }
+  ],
+  "attitude": [
+    {
+      "id": "attitude_0",
+      "name": "Basic wheels",
+      "mass": 8,
+      "cost": 5,
+      "power": 12,
+      "description": "Coarse pointing blurs high-resolution images.",
+      "blur": 10
+    },
+    {
+      "id": "attitude_1",
+      "name": "Precision wheels",
+      "mass": 18,
+      "cost": 12,
+      "power": 20,
+      "description": "Accurate pointing keeps mapping images sharp.",
+      "blur": 2
+    },
+    {
+      "id": "attitude_2",
+      "name": "Fine guidance",
+      "mass": 30,
+      "cost": 24,
+      "power": 30,
+      "description": "Sub-metre pointing contribution; higher cost.",
+      "blur": 0.4
+    }
+  ],
+  "thermal": [
+    {
+      "id": "thermal_0",
+      "name": "Passive blanket",
+      "mass": 8,
+      "cost": 3,
+      "power": 5,
+      "description": "Low power but limited heat rejection during intensive work.",
+      "limit": 220
+    },
+    {
+      "id": "thermal_1",
+      "name": "Mapper radiator",
+      "mass": 20,
+      "cost": 9,
+      "power": 15,
+      "description": "Rejects the heat of normal mapping operations.",
+      "limit": 420
+    },
+    {
+      "id": "thermal_2",
+      "name": "Active thermal loop",
+      "mass": 38,
+      "cost": 19,
+      "power": 35,
+      "description": "Handles high power instruments with extra mass.",
+      "limit": 650
+    }
+  ]
+}
